@@ -13,7 +13,10 @@
     },
     {
       "name": "gcr.io/cloud-builders/docker",
-      "args": ["push", "gcr.io/${PROJECT_ID}/test-app:${COMMIT_SHA}"]
+      "args": [
+        "push",
+        "${_IMAGE_REGION}/${PROJECT_ID}/github-tdc/test-app:${COMMIT_SHA}"
+      ]
     }
   ]
 }
