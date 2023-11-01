@@ -1,0 +1,8 @@
+{
+  "name": "@gcp-autodeploy/mono",
+  "version": "1.0.0",
+  "author": "Jayesh Kugsiya",
+  "workspaces": [
+    "packages/*"
+  ]
+}
