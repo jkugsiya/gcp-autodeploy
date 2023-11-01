@@ -7,13 +7,13 @@
         "-f",
         "packages/test-app/Dockerfile",
         "-t",
-        "${_IMAGE_REGION}/${PROJECT_ID}/github-tdc/test-app:1.0.0",
+        "${_IMAGE_REGION}/${PROJECT_ID}/github-tdc/test-app:${COMMIT_SHA}",
         "."
       ]
     },
     {
       "name": "gcr.io/cloud-builders/docker",
-      "args": ["push", "gcr.io/${PROJECT_ID}/test-app:1.0.0"]
+      "args": ["push", "gcr.io/${PROJECT_ID}/test-app:${COMMIT_SHA}"]
     }
   ]
 }
